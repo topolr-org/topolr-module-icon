@@ -5,6 +5,7 @@
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
+    vertical-align: middle;
 }
 .icon-spin{
     display:inline-block;
