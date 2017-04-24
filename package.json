@@ -1,0 +1,30 @@
+{
+  "name": "topolr-module-icon",
+  "version": "1.0.1",
+  "description": "topolr icon lib",
+  "main": "index.js",
+  "scripts": {
+    "build":"node index.js",
+    "test":"node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/topolr-org/topolr-module-icon.git"
+  },
+  "author": "wangjinliang (hou80houzhu)",
+  "topolr": {
+    "basePath": "./com/topolr/"
+  },
+  "keywords": [
+    "topolr",
+    "icon"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/topolr-org/topolr-module-icon/issues"
+  },
+  "homepage": "https://github.com/topolr-org/topolr-module-icon#readme",
+  "dependencies": {
+    "topolr-util": "^1.0.4"
+  }
+}
