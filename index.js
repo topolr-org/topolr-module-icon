@@ -13,6 +13,6 @@ for(var i in iconmapping){
     console.log("  Build:"+i);
     var name=i,path=require("path").resolve(__dirname,iconmapping[i]);
     var output=require("path").resolve(__dirname,"./com/topolr/icon/"+name+".js");
-    builter.outputFile(path,output);
+    builter.outputFile(name,path,output);
 }
 console.log("Build Done");

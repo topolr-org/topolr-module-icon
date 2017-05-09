@@ -29,10 +29,10 @@ var builter={
         svg.addChild(defs);
         return svg.str();
     },
-    outputFile:function (sourcepath,outputpath) {
+    outputFile:function (name,sourcepath,outputpath) {
         var str=builter.getSymbolStr(sourcepath);
         var content=topolr.file(require("path").resolve(__dirname,"./codetemp.tpl")).readSync();
-        content=content.replace(/\#\#SVGCONTENT\#\#/g,JSON.stringify(str));
+        content=content.replace(/\#\#NAME\#\#/g,name).replace(/\#\#SVGCONTENT\#\#/g,JSON.stringify(str));
         return topolr.file(outputpath).write(content);
     }
 };

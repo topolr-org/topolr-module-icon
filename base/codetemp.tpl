@@ -1,5 +1,5 @@
 /**
- * @packet icon.base;
+ * @packet icon.##NAME##;
  * @css icon.style.icon;
  */
 $(##SVGCONTENT##).appendTo("body");
