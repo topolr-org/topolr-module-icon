@@ -20,7 +20,13 @@ var builter={
         for(var i=0;i<paths.length;i++){
             var nodearray=parser.parse(topolr.file(paths[i]).readSync());
             for(var t=0;t<nodearray.length;t++) {
-                var title = nodearray[t].getChild(0).getChild(0).content;
+                var title ="";
+                if(nodearray[t].getChild(0).getChild(0)) {
+                    title=nodearray[t].getChild(0).getChild(0).content;
+                }else{
+                    var a=paths[i].split("/").pop();
+                    title=a.substring(0,a.length-4);
+                }
                 nodearray[t].setTagName("symbol").removeAttr(["version", "xmlns", "width", "height"]).setAttr({
                     id: "mt-icon-" + title
                 });

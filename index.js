@@ -6,6 +6,7 @@ var iconmapping={
     files:"./icons/files",
     loading:"./icons/loading",
     player:"./icons/player",
+    direct:"./icons/direct",
     tm:"./icons/tm"
 };
 console.log("Start Build");
