@@ -1,6 +1,6 @@
 {
   "name": "topolr-module-icon",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "topolr icon lib",
   "main": "index.js",
   "scripts": {
