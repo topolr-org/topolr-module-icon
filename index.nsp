@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="<%=request.getHttpPath();%>node_modules/topolr/topolr.js" type="text/javascript"></script>
+    <script>
+        App({
+    "sitePath": "<%=request.getHttpPath();%>",
+    "basePath": "com/dist/",
+    "title": "icon",
+    "description": "icons of topolr",
+    "boot": "icon.test.boot",
+    "map": {
+        "d": true,
+        "m": {
+            "p": {
+                "icon.action": "a0514105bb",
+                "icon.editor": "e40b7acc0a",
+                "icon.files": "6f70429ee0",
+                "icon.iconpreviewer": "077e2ea31d",
+                "icon.loading": "bfb407fe1c",
+                "icon.player": "2f9f8b707c",
+                "icon.test": "2f84e120c7",
+                "icon.tm": "b1eb970f4a",
+                "icon.weather": "77df27ce51"
+            },
+            "c": {
+                "icon.style.icon": "c34b1536de",
+                "icon.style.style": "013abbdc57"
+            },
+            "t": {
+                "icon.template.temp": "8397de88de"
+            }
+        },
+        "c": {
+            "icon-test-c1": {
+                "p": [
+                    "icon.test",
+                    "icon.action",
+                    "icon.editor",
+                    "icon.files",
+                    "icon.iconpreviewer",
+                    "icon.loading",
+                    "icon.player",
+                    "icon.tm",
+                    "icon.weather"
+                ],
+                "c": [
+                    "icon.style.icon",
+                    "icon.style.style"
+                ],
+                "t": [
+                    "icon.template.temp"
+                ]
+            }
+        },
+        "id": "da5eb328eba6be37128194ea7428d4de"
+    }
+}).boot(true);
+    </script>
+</head>
+<body>
+</body>
+</html>

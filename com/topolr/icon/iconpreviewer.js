@@ -3,21 +3,27 @@
  * @template icon.template.temp;
  * @css icon.style.style;
  */
-$.TopolrIconPreview=function(){
-    var data={};
-    $("svg").each(function(){
-        if($(this).attr("packet")){
-            var t=[];
-            $(this).find("symbol").each(function(){
-                var symbol=$(this);
-                var id=symbol.attr("id");
-                t.push({
-                    id:id,
-                    name:id
+$.TopolrIconsPreview=function(){
+    if($(".mt-icon-previewer").length<=0) {
+        var data = {};
+        $("svg").each(function () {
+            if ($(this).attr("packet")) {
+                var t = [];
+                $(this).find("symbol").each(function () {
+                    var symbol = $(this);
+                    var id = symbol.attr("id");
+                    t.push({
+                        id: id,
+                        name: id
+                    });
                 });
-            });
-            data[$(this).attr("packet")]=r;
-        }
-    });
-    var templatestr=module.getTemplate("@temp","previewer");
+                data[$(this).attr("packet")] = t;
+            }
+        });
+        var templatestr = module.getTemplate("@temp", "previewer");
+        var et=$($.template(templatestr).render(data)).appendTo("body");
+        et.find(".mt-icon-previewer-arrow").click(function () {
+            et.toggleClass("mt-icon-previewer-open");
+        });
+    }
 };

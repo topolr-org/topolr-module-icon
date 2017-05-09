@@ -4,8 +4,8 @@
   "description": "topolr icon lib",
   "main": "index.js",
   "scripts": {
-    "build":"node index.js",
-    "test":"node test.js"
+    "build": "node index.js",
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,8 @@
   "homepage": "https://github.com/topolr-org/topolr-module-icon#readme",
   "dependencies": {
     "topolr-util": "^1.0.4"
+  },
+  "devDependencies": {
+    "topolr": "^1.4.8"
   }
 }
