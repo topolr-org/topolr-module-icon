@@ -1,5 +1,13 @@
 /**
  * @packet icon.iconpreviewer;
+ * @require icon.action;
+ * @require icon.direct;
+ * @require icon.editor;
+ * @require icon.files;
+ * @require icon.loading;
+ * @require icon.player;
+ * @require icon.tm;
+ * @require icon.weather;
  * @template icon.template.temp;
  * @css icon.style.style;
  */
