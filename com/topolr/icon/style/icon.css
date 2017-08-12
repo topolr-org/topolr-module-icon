@@ -1,34 +1,37 @@
-.mt-icon {
+.t-icon {
     display: inline-block;
-    width: 0.8em;
-    height: 0.8em;
+    width: 1em;
+    height: 1em;
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
-    vertical-align: baseline;
+    vertical-align: middle
 }
-.mt-icon-spin{
-    display:inline-block;
-    -webkit-animation:icon-spin 2s infinite linear;
-    animation:icon-spin 2s infinite linear;
+
+.t-icon-spin {
+    display: inline-block;
+    -webkit-animation: t-icon-spin 2s infinite linear;
+    animation: t-icon-spin 2s infinite linear
 }
-@-webkit-keyframes icon-spin{
-    0%{
-        -webkit-transform:rotate(0deg);
-        transform:rotate(0deg);
+
+@-webkit-keyframes t-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
     }
-    100%{
-        -webkit-transform:rotate(359deg);
-        transform:rotate(359deg);
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
     }
 }
-@keyframes icon-spin{
-    0%{
-        -webkit-transform:rotate(0deg);
-        transform:rotate(0deg);
+
+@keyframes t-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
     }
-    100%{
-        -webkit-transform:rotate(359deg);
-        transform:rotate(359deg);
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
     }
 }
